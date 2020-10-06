@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Spritesheet from "react-responsive-spritesheet";
 
 function App() {
   return (
@@ -19,6 +20,16 @@ function App() {
           Learn React
         </a>
       </header>
+      <Spritesheet
+        className={`my-element__class--style`}
+        image={`https://raw.githubusercontent.com/danilosetra/react-responsive-spritesheet/master/assets/images/examples/sprite-image-horizontal.png`}
+        widthFrame={420}
+        heightFrame={500}
+        steps={14}
+        fps={10}
+        autoplay={true}
+        loop={true}
+      />
     </div>
   );
 }
